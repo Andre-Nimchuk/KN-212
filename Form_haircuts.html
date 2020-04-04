@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<script src="js/script.js"></script>
+	<link rel="stylesheet" href="css/style table.css">
+</head>
+<body>
+<form action="">
+<fieldset>
+<legend>
+Онлайн запис:
+</legend>
+<input type="radio" name="Sex" value="Чоловіча" checked="checked" />
+<small>Чоловік</small><br />
+<input type="radio" name="Sex" value="Чоловіча" value="Дитина" /><small>Дитина</small><br />
+<input type="text" name="email" id="comment_email" onkeyup="check_email()" size="20" value="andre@gmail.com"/><small id="email_flag">Email</small><br />
+<input type="password" name="pd" size="20" maxlength="35" /> <small>Пароль</small><br />
+<input type="text" name="hair"  id="comment_hair" onkeyup="check_hair()" size="20" value="Fade" /> <small id="hair_flag">Тип стрижки</small><br />
+<input type="text" name="time" id="comment_time" onkeyup="check_time()" size="20" value="17:00/21-01-2001" /> <small id="time_flag">Дата та час</small><br />
+<input type="submit" value="Відправити" />
+</fieldset>
+</form>	
+
+<button id="menu">Download</button>
+
+<script>
+  menu.onclick = function() {
+    alert('перший файл');
+
+    menu.dispatchEvent(new CustomEvent("menu-open", {
+      bubbles: true
+    }));
+
+    alert('готово');
+  };
+
+  document.addEventListener('menu-open', () => alert('Документ скачано'))
+</script>
+
+<h1 id="elem">Хай від Андре!</h1>
+
+<script>
+  
+  document.addEventListener("hello", function(event) { 
+    alert("Хай від " + event.target.tagName); 
+  });
+
+  
+  let event = new Event("hello", {bubbles: true}); 
+  elem.dispatchEvent(event);
+
+  
+
+</script>
+
+
+<table>
+<tr><th>Barber</th><th>Price</th><th>Haircut</th><th>Client</th></tr>
+<tr><td>Andriy</td><td>25$</td><td>Fade</td><td>Roman</td></tr>
+<tr><td>Anton</td><td>15$</td><td>Box</td><td>Sergiy</td></tr>
+<tr><td>Roman</td><td>20$</td><td>Undercut</td><td>Igor</td></tr>
+<tr><td>Yura</td><td>35$</td><td>Midcur</td><td>Andrew</td></tr>
+</table>
+<form name="form" onsubmit="return validate()">
+Ім'я: <input type="text" name="name"> <span style="color:red" id="namef"></span><br />
+e-mail: <input type="text" name="email"> <span style="color:red" id="emailf"></span>
+<br /><input type="submit" value="Відправити">
+</form>
+<div class="switch">
+    				<input type="checkbox" id="switch-1" class="switch-check">
+    				 <label for="switch-1" class="switch-label">
+       						 Опция
+       				    <span class="switch-slider switch-slider-on"></span>
+       				    <span class="switch-slider switch-slider-off"></span>
+   					 </label>
+ 				 </div>
+</body>
+</html>

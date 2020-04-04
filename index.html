@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Shelby Brbershop</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+	<header class="billboard">
+		<nav><!-- class = "droping"-->
+			<input type="checkbox" id="checkbox-menu">
+			<label for="checkbox-menu">
+				<ul class="menu touch">
+					<li><a class = "logo" href="#">SHELBY BARBER</a></li>
+					<li><a href="#company">Про нас</a></li>
+					<li><a href="#price_ref">Послуги</a></li>
+					<li><a href="#">Відгуки<!--<i class="fa fa-angle-down"></i>--></a>
+					<!--
+					<ul class="submenu">
+       					 <li><a href="">Item 1</a></li>
+        				 <li><a href="">Item 2</a></li>
+      				</ul>
+      				-->
+      				</li>
+					<li><a href="#Barberis">Барбери</a></li>
+					<li><a href="Form_haircuts.html">Реєстрація</a></li>
+					<li><a href="#cont">Контакти</a></li>
+				</ul>
+				<span class="toggle">☰</span>
+			</label>
+			<div class="titles">
+				<div>
+					<h1>БАРБЕРШОП НОВОГО ФОРМАТУ</h1>
+				</div>
+				<div><p>Чоловічі стрижки та гоління</p></div>
+			</div>
+				<div class="research">
+  					<form>
+  						<input type="text" placeholder="Пошук тут...">
+  						<button type="submit"></button>
+  					</form>
+				</div>
+
+
+
+
+
+				 <div class="switch">
+    				<input type="checkbox" id="switch-1" class="switch-check">
+    				 <label for="switch-1" class="switch-label">
+       						 Опция
+       				    <span class="switch-slider switch-slider-on"></span>
+       				    <span class="switch-slider switch-slider-off"></span>
+   					 </label>
+ 				 </div>
+ 
+
+
+		</nav>
+	</header>
+
+<a class="back_to_top" title="Вверх">↑</a>
+<script>
+let goTop = document.querySelector('.back_to_top');
+window.addEventListener('scroll', trackScroll);
+goTop.addEventListener('click', backToTop);
+function trackScroll() {
+    let scroll = window.pageYOffset;
+    let coord = document.documentElement.clientHeight;
+
+    if (scroll > coord) {
+      goTop.classList.add('back_to_top-show');
+    }
+    if (scroll < coord) { goTop.classList.remove('back_to_top-show'); } } function backToTop() { if (window.pageYOffset > 0) {
+      window.scrollBy(0, -80);
+      setTimeout(backToTop, 0);
+    }
+  }
+</script>
+
+<section class="time_location_phone">
+		<div class ="container">
+			<div class="location_title">
+				<h6 id="cont">Зустрічай у твоєму місті</h6>
+			</div>
+			<div class="location_time_container">
+				<div class ="location_first">
+					<img src="images/1.PNG" />
+					<h5>Патона 32, м.Львів</h5>
+				</div>
+				<div class ="time_first">
+					<img src="images/2.PNG"/>
+					<p>10:00 - 20:00</p>
+					<h5>без вихідних</h5>
+				</div>
+				<div class ="phone_first">
+					<img src="images/3.PNG"/>
+					<h5>Телефон</h5>
+					<p>38063-321-33-57</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="services">
+		<div class ="container">
+			<div class="price" id="price">
+			<div class="title-agileits">
+                    <h3>Наші послуги</h3> 
+			   </div>
+		<div class = "price_title">
+			<p id="price_ref">Ми створюємо стильні чоловічі образи. Ознайомтесь з нашими послугами</p>
+		</div>
+					<div class="price-list">
+								<div class="wthree-grids-price">
+									<h4>Чоловіча стрижка</h4>
+									<h5>350 грн.</h5>
+									<div class="clearfix"> </div>
+								</div>
+									<div class="wthree-grids-price">
+									<h4>Стрижка бороди</h4>
+									<h5>200 грн.</h5>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="wthree-grids-price">
+									<h4>Стрижка та стрижка бороди</h4>
+									<h5 id="price_ref">500 грн.</h5>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="wthree-grids-price">
+									<h4>Дитяча Стрижка</h4>
+									<h5>250 грн.</h5>
+									<div class="clearfix"> </div>
+								</div>
+								<div class="wthree-grids-price">
+									<h4>Традиційне вологе голніння</h4>
+									<h5>200 грн.</h5>
+									<div class="clearfix"> </div>
+								</div>
+							</div>
+		<div class="clearfix"> </div>
+	</div>
+	</div>
+	</section>
+
+	<section class="portfolio">
+		<div class="container_2">
+			<div class ="photo_container">
+				<div class="portfolio_1">
+					<img src="images/port2.jpg" />
+				</div>
+				<div class="portfolio_2">
+					<img src="images/port1.PNG" />
+				</div>
+				<div class="portfolio_3">
+					<img src="images/port10.jpg" />
+				</div>
+				<div class="portfolio_4">
+					<img src="images/port16.png" />
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="describe">
+		<div class="container">
+			<div class="describe_title">
+				<img src="images/port20.jpg" />
+				<h6 id="company">Про компанію</h6>
+				<p>Ми – дружня родина з високими стандартами якості<p>та цінностями. За роки ми заснували свій особливий</p><p>стиль та раді ним поділитись з нашими клієнтами. У</p> <p>нас не просто барбершоп, у нас - спільнота.</p>
+				</p>
+				<a href="https://www.instagram.com/barberis.lviv/?hl=ru">Ми ділимось нашою атмосферою в Instagram</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="barber_catalog">
+		<div class="container">
+			<div class="catalog_title">
+				<h6>Познайомтесь з нашими майстрами</h6>
+				<p id="Barberis">Наші майстри володіють прекрасним стилем та</p><p>високими професійними якостями.</p>
+			</div>
+			<div class="barber_ilustration">
+				<div class="photo" data-title="Антон">
+				<img src="images/barber1.PNG" />
+				</div>
+				<div class="photo_2" data-title="Євген">
+				<img src="images/barber2.PNG" />
+				</div>
+				<div class="photo_3" data-title="Андрій">
+				<img src="images/baber3.jpg" />
+				</div>
+			</div>
+			<div class="button">
+				<a href="Form_haircuts.html"><button class="new">Запис онлайн</button></a>
+			</div>
+		</div>
+	</section>
+
+	<section class="logo_end_section">
+		<div class="container">
+			<div class ="logo_end">
+				<img src="images/logo_last.png" />
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer_end">
+			<div class="container">
+				<div class="text_end_footer">
+					<p>Контакти за координатами</p>
+					<h4>38063-321-33-57</h4>
+					<h3>Патона 32, Львів</h3>
+					<h5>Наші двері відкриті 10:00 – 20:00, без вихідних</h5>
+					<p>Пошта: barberis.lviv@gmail.com</p>
+				</div>
+				<div class="social_network">
+					<a href="https://www.instagram.com/barberis.lviv/?hl=ru"><img class="footer_images_1"src="images/logo_footer_1.PNG" alt="instagram" /></a>
+					<a href="https://www.facebook.com/barberis.barbershop.lviv/?modal=admin_todo_tour"><img class="footer_images_2" src="images/logo_footer_2.PNG" /></a>
+				</div>
+			</div>
+	</footer>
+
+</body>
+<script src="js/script.js"></script>
+</html>
